@@ -34,9 +34,9 @@ class db {
       }
     });
   }
-  async eksekusi(q = { query, bind, options }, func = (result) => {}) {
+  async eksekusi(q = { query, bind, options }, func = (result) => result) {
     try {
-      result = await connection(q.query, q.bind, q.options);
+      let result = await connection(q.query, q.bind, q.options);
       func(result);
     } catch (err) {
       console.error(err);
