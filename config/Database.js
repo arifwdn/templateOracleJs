@@ -2,7 +2,7 @@ const oracledb = require("oracledb");
 const setting = require("./setting-db");
 oracledb.outFormat = oracledb.OUT_FORMAT_OBJECT;
 
-const query = (q, bind = [], options = {}) => {
+const query = (q, bind = {}, options = {}) => {
   return new Promise(async function (resolve, reject) {
     let connection;
     try {
