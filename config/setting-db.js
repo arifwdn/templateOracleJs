@@ -1,8 +1,8 @@
 // fill this data DB or can set with env
 const dataDB = {
-  user: "Username", //Username Database
-  password: "pw", //Password Database
-  hostDB: "host/database", //Host / database name
+  user: "OUVEVE", //Username Database
+  password: "dawndoawid", //Password Database
+  hostDB: "localhost/WKWKDB", //Host / database name
 };
 
 module.exports = dataDB;

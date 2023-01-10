@@ -18,7 +18,7 @@ class db {
     return new Promise(async function (resolve, reject) {
       let connection;
       try {
-        connection = await connect(this.user, this.password, this.hostDB);
+        connection = await this.connect(this.user, this.password, this.hostDB);
         const result = await connection.execute(query, bind, options);
         resolve(result);
       } catch (err) {
@@ -36,7 +36,7 @@ class db {
   }
   async eksekusi(q = { query, bind, options }, func = (result) => result) {
     try {
-      let result = await connection(q.query, q.bind, q.options);
+      let result = await this.query(q.query, q.bind, q.options);
       func(result);
     } catch (err) {
       console.error(err);
