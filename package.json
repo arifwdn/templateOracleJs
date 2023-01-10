@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/arifwdn/templateOracleJs/issues"
   },
-  "homepage": "https://github.com/arifwdn/templateOracleJs#readme"
+  "homepage": "https://github.com/arifwdn/templateOracleJs#readme",
+  "dependencies": {
+    "oracledb": "^5.5.0"
+  }
 }
