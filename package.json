@@ -1,0 +1,19 @@
+{
+  "name": "app-template-Oracle",
+  "version": "1.0.0",
+  "description": "buat template ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arifwdn/templateOracleJs.git"
+  },
+  "author": "arifwdn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arifwdn/templateOracleJs/issues"
+  },
+  "homepage": "https://github.com/arifwdn/templateOracleJs#readme"
+}
