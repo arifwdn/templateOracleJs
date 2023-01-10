@@ -1,10 +1,11 @@
-const database = require("./config/Database");
-const setting = require("./config/setting-db");
+const db = require("./config/Database");
 
-const db = new database(setting.user, setting.password, setting.hostDB);
 const data = {
-  query: `select * from table`,
+  query: `select * from table where id = :uid`,
+  bind: [{ uid: 1 }],
+  // options for CUD ex. {autocommit: true}
 };
-db.eksekusi(data, (data) => {
-  console.log(data);
+
+db(data, (data) => {
+  console.log(data.rows);
 });
